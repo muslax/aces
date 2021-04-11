@@ -1,6 +1,6 @@
 export const DB = {
   Database:     'aces',
-  ModulesMeta:  'aces',
+  ModulesMeta:  'modules_meta',
   Licenses:     'licenses',
   Users:        'users',
   Clients:      'clients',

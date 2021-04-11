@@ -1,12 +1,11 @@
 import { LicenseLayout } from "components/layouts/LicenseLayout"
+import Projects from "components/license/Projects"
 import { ROUTES } from "config/routes"
-import { useLicense } from "hooks/useLicense"
 import useUser from "hooks/useUser"
 import Head from 'next/head'
 
 const Dashboard = () => {
   const { user } = useUser()
-  const { license, isLoading, isError } = useLicense()
 
   return (
     <>
@@ -15,9 +14,7 @@ const Dashboard = () => {
       </Head>
       <div className="aces-wrap mt-4">
         <div className="aces-geist pb-20">
-          <pre>
-            {JSON.stringify(license, null, 2)}
-          </pre>
+          <Projects user={user} />
         </div>
       </div>
     </>

@@ -1,8 +1,27 @@
+import { getClients } from "lib/queries/getClients"
 import { getLicense } from "lib/queries/getLicense"
+import { getProjects } from "lib/queries/getProjects"
+import { getUsers } from "lib/queries/getUsers"
 import withSession from "lib/session"
 
 const ACCEPTED_QUERIES = {
   'get-license': getLicense,
+  'get-clients': getClients,
+  'get-users': getUsers,
+  'get-projects': getProjects,
+
+  // 'get-groups': getGroups,
+  // 'get-guests': getGuests,
+  // 'get-license': getLicense,
+  // 'get-modules': getModules,
+  // 'get-modules-meta': getModulesMeta,
+  // 'get-persona': getPersona,
+  // 'get-personae': getPersonae,
+  // 'get-personae-with-schedules': getPersonaeWithSchedules,
+  // 'get-credentials': getPersonaeCredentials,
+  // 'get-project': getProject,
+  // 'get-simple-projects': getSimpleProjects,
+  // 'get-user': getUser,
 }
 
 export default withSession(async (req, res) => {
