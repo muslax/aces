@@ -41,7 +41,7 @@ const LoginPage = () => {
   const btnBase = "bg-blue-600 w-full py-2 font-bold text-gray-50 rounded focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 active:text-white active:bg-plum-700"
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white border-t-8 border-blue-600 py-10">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white border-t-8 border-plum-600 py-10">
       <div className="rounded-md border-4 border-plum-200 border-opacity-50">
         <div className="rounded border border-plum-300 hover:border-plum-400 shadow-sm p-5">
           <form className="w-64" onSubmit={handleSubmit}>

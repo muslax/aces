@@ -5,8 +5,8 @@ import { WithSkeletonLoader } from 'components/WithSkeletonLoader'
 import fetchJson from 'lib/fetchJson'
 import { pick } from 'lib/utils'
 
-import 'tailwindcss/tailwind.css'
-// import 'lib/globals.css'
+// import 'tailwindcss/tailwind.css'
+import 'lib/globals.css'
 
 function MyApp({ Component, pageProps }) {
   const skeletonLoader = Component.skeletonLoader

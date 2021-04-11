@@ -10,6 +10,7 @@ module.exports = {
       white: colors.white,
       black: colors.black,
       gray: colors.blueGray,
+      blue: colors.blue,
       plum: {
         '50':  '#f9fafb',
         '100': '#f5f6f8',

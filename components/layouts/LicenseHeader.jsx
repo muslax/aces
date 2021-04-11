@@ -19,10 +19,10 @@ export function LicenseHeader({ isLoading }) {
 
   return (
     <>
-      <div className="aces-wrap bg-white border-b border-bluegray-300">
+      <div className="aces-wrap bg-white border-b border-gray-300">
         <div className="aces-geist py-3">
           <div className="flex h-7 items-center">
-            <div className="flex mr-3 border-r- border-bluegray-300">
+            <div className="flex mr-3 border-r- border-gray-300">
               <Link href="/">
                 <a className="inline-block">
                   <ACESGray className="h-6" />
@@ -31,7 +31,7 @@ export function LicenseHeader({ isLoading }) {
             </div>
             <div className="flex flex-grow">
               <div className="inline-flex items-center text-gray-800 hover:text-gray-600">
-                <span className="text-sm text-bluegray-600">
+                <span className="text-sm text-gray-600">
                   By Gaia Solutions
                 </span>
               </div>
@@ -123,13 +123,13 @@ const Navigation = () => {
     { label: 'Billing', href: '/billing' },
   ]
 
-  const normal = "block pt-1 pb-1 border-b-4 border-transparent hover:border-plum-500 text-bluegray-500 hover:text-plum-600"
-  const active = "block pt-1 pb-1 text-bluegray-700 border-b-4 border-bluegray-400 hover:text-plum-600"
+  const normal = "block pt-1 pb-1 border-b-4 border-transparent hover:border-plum-500 text-gray-500 hover:text-plum-600"
+  const active = "block pt-1 pb-1 text-gray-700 border-b-4 border-gray-400 hover:text-plum-600"
 
   return (
-    <div className="aces-wrap bg-white border-b border-bluegray-300">
+    <div className="aces-wrap bg-white border-b border-gray-300">
       <div className="aces-geist -mb-px">
-        <ul className="flex items-center justify-center sm:justify-start text-sm text-bluegray-500">
+        <ul className="flex items-center justify-center sm:justify-start text-sm text-gray-500">
         {navigation.map(({ label, href }, index) => (
           <li key={href} className={index ? 'ml-6 sm:ml-8 lg:ml-8' : ''}>
             <Link href={href}>

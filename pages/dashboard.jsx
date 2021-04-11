@@ -25,9 +25,8 @@ const Dashboard = () => {
 }
 
 Dashboard.suppressFirstRenderFlicker = true
-Dashboard.redirectUnAuthenticatedTo = ROUTES.Login
+Dashboard.redirectUnAuthenticatedTo = ROUTES.Home
 Dashboard.getLayout = (page) => <LicenseLayout>{page}</LicenseLayout>
-Dashboard.skeletonLoader = <LicenseLayout isLoading></LicenseLayout>
-// Dashboard.skeletonLoader = <>SKELETON</>
+Dashboard.skeletonLoader = <LicenseLayout isLoading/>
 
 export default Dashboard
